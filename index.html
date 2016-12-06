@@ -30,7 +30,7 @@
 				<li><a id="about" onclick="refreshAbout()" href="#">About</a></li>
                 <li><a id="download" onclick="refreshDownload()" href="#">Download</a></li>
 				<li><a id="features" onclick="refreshEax()" href="#">eax</a></li>
-				
+
 			</ul>
 		</aside>
 		<div id="content">
@@ -40,8 +40,13 @@
 			<div class="contentElement"></div>
 		</div>
 		<footer>
-			<p>-= Copyright 2015 — APBUnique parser =-</p>
+			<p>-= <b>Copyright </b><b id="copyright-year">2015</b> — APBUnique parser =-</p>
 		</footer>
 	</div>
+  <script>
+    var d = new Date();
+    var n = d.getFullYear();
+    document.getElementById("copyright-year").innerHTML = n;
+  </script>
 </body>
 </html>
